@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: skillbridge-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/skillbridge
+    username: postgres
+    password: admin5652
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  flyway:
+    enabled: true
