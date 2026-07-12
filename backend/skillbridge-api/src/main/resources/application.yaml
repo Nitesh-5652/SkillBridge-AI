@@ -13,3 +13,11 @@ spring:
 
   flyway:
     enabled: true
+
+logging:
+  level:
+    org.springframework.security: TRACE
+    org.springframework.web: DEBUG
+
+jwt:
+  secret: 1234567890123456789012345678901234567890123456789012345678901234

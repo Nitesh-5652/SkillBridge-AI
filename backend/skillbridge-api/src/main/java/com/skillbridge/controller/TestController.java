@@ -1,0 +1,21 @@
+package com.skillbridge.controller;
+
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class TestController {
+
+    @GetMapping("/api/v1/test")
+    public String test(Authentication authentication) {
+
+        return "Hello " + authentication.getName();
+    }
+
+    @GetMapping("/api/v1/admin")
+    public String admin() {
+
+        return "Welcome Admin";
+    }
+}
